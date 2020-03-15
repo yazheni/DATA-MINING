@@ -16,10 +16,10 @@ we are using "SunFounder PiCar-V Kit V2.0 for Raspberry Pi" . We have assembled 
 * The exposed drivers and circuits could have a covering, as the cuicuits and battery wire sometimes interfere with the tire when car moves.
 
 # Phase 2: Setting up and ideas to improve the connectivity of picar
-We are using the  android mobile hotspot to connect to the raspberry pi and at times the iphone's hotspot doesnt work. The home wifi or the university wifi are having connectivity issues while trying to use the wpa_supplicant.conf file. The best way to avoid this is by always have a static IP on your network. by adding this to the wpa_supplicant, 
-address 192.168.1.155 # Static IP you want 
-netmask 255.255.255.0 
-gateway 192.168.1.1   # IP of your router. Now ideally the raspberry pi will be able to connect to the wifi. 
+We are using the  android mobile hotspot to connect to the raspberry pi and at times the iphone's hotspot doesnt work. The home wifi or the university wifi are having connectivity issues while trying to use the wpa_supplicant.conf file. The best way to avoid this is by always have a static IP on your network. We added this to the wpa_supplicant, 
+* address 67.84.48.63 # Static IP  
+* netmask 255.255.0.0
+* gateway 192.168.1.1   # IP of our router. Now ideally the raspberry pi will connect to the wifi. 
 
 
 
